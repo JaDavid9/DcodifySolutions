@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dcodify Solutions</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<header class="hero">
+  <div class="container nav-container">
+    <div class="logo-area">
+      <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo" />
+      <h1>Dcodify Solutions</h1>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#pocetna">Pocetna</a></li>
+        <li><a href="#about">O nama</a></li>
+        <li><a href="#services">Usluge</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="pocetna">
+    <div class="container">
+        <div class="content">
+        <h1>We code your</h1>
+        <h2>digital ideas!</h2>
+    </div>
+        <div class="logo">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" />
+    </div>
+    </div>
+</section>
+
+
+
+  <section id="about" class="about">
+  <div class="container">
+    <h2>O nama</h2>
+    <p>
+      Dcodify Solutions je moderna digitalna companija fokusirana na razvoj i odrzavanje web sajtova, prodavnica, 
+      izradu softverskih rešenja, izrada web i desktop aplikacija, kreiranje i odrzavanje baze podataka, SEO optimizacija, hosting i podrska.
+    </p>
+
+    <!-- OVDJE JE RAZMAK PRIRODNO NASTAO ZATVARANJEM P I POCETKOM H2 -->
+    <h2 class="tech-title">Tehnologije koje koristimo</h2>
+
+    <div class="tech-icons">
+      <div class="tech-item">
+        <img src="{{ url_for('static', filename='icons/python.png') }}" alt="Python">
+        <p>Python</p>
+      </div>
+      <div class="tech-item">
+        <img src="{{ url_for('static', filename='icons/javascript.png') }}" alt="JavaScript">
+        <p>JavaScript</p>
+      </div>
+      <div class="tech-item">
+        <img src="{{ url_for('static', filename='icons/mysql.png') }}" alt="MySQL">
+        <p>MySQL</p>
+      </div>
+      <div class="tech-item">
+        <img src="{{ url_for('static', filename='icons/wordpress.png') }}" alt="WordPress">
+        <p>WordPress</p>
+      </div>
+      <div class="tech-item">
+        <img src="{{ url_for('static', filename='icons/cpp.png') }}" alt="Cpp">
+        <p>Cpp</p>
+      </div>
+      <div class="tech-item">
+        <img src="{{ url_for('static', filename='icons/react.png') }}" alt="React">
+        <p>React Native</p>
+      </div>
+      <div class="tech-item">
+        <img src="{{ url_for('static', filename='icons/css3.png') }}" alt="CSS3">
+        <p>CSS3</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="services" class="services"> <div class="container">
+      <h2>Naše usluge</h2>
+      <ul>
+        <li>✅ Izrada i prilagođavanje web sajtova</li>
+        <li>✅ Održavanje web sajtova</li>
+        <li>✅ Razvoj softvera</li>
+        <li>✅ Izrada web i desktop aplikacija</li>
+        <li>✅ Kreiranje i administracija baza podataka</li>    
+        <li>✅ SEO optimizacija</li>
+        <li>✅ Hosting i podrška</li>
+      </ul>
+    </div> </section>
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Zakazite sastanak</h2>
+    <p>Pošaljite nam kratak opis Vašeg projekta i dobićete predlog rešenja koje odgovara Vašim potrebama.</p>
+    
+    <div class="contact-image">
+      <img src="{{ url_for('static', filename='david.jpg') }}" alt="Vaša slika" class="profile-pic" />
+      <p> <strong>David Stanisavljević</strong></p>
+    </div>
+
+    <p>Kontaktirajte nas na: <strong>dstanisavljevic579@gmail.com</strong></p>
+  </div>
+</section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Dcodify Solutions | Kontakt: dstanisavljevic579@gmail.com</p>
+    </div>
+  </footer>
+
+  <button onclick="scrollToTop()" id="scrollTopBtn" title="Vrati se na početak">↑</button>
+
+<script>
+  // Prikaži dugme kada korisnik skroluje nadole
+  window.onscroll = function() {
+    document.getElementById("scrollTopBtn").style.display =
+      (document.documentElement.scrollTop > 100) ? "block" : "none";
+  };
+
+  // Skroluj do vrha
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+</body>
+</html>
